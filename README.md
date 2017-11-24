@@ -95,7 +95,7 @@ Open your Terminal and enter:
 
 For Linux:
 
-	wget https://raw.githubusercontent.com/frappe/bench/master/playbooks/install.py
+	wget https://raw.githubusercontent.com/ketan4373/bench/master/playbooks/install.py
 
 For Mac OSX:
 
