@@ -4,8 +4,8 @@
 - include: ../prerequisites/install_prerequisites.yml
   when: ansible_distribution != 'MacOSX'
 
-- include: ../prerequisites/install_roles.yml
-  when: ansible_distribution != 'MacOSX'
+#- include: ../prerequisites/install_roles.yml
+#  when: ansible_distribution != 'MacOSX'
 
 - include: macosx.yml
   when: ansible_distribution == 'MacOSX'
