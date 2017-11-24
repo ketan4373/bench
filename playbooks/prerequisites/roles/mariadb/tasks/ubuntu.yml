@@ -1,7 +1,6 @@
 ---
 - name: Update apt cache
   apt: update_cache=yes
-  when: mariadb_list.changed == True or mariadb_key.changed == True
 
 - name: Unattended package installation
   shell: export DEBIAN_FRONTEND=noninteractive
