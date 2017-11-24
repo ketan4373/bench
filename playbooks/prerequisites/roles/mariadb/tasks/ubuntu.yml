@@ -2,6 +2,9 @@
 - name: Update apt cache
   apt: update_cache=yes
 
+
+- pause:
+
 - name: Unattended package installation
   shell: export DEBIAN_FRONTEND=noninteractive
   changed_when: false
