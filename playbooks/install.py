@@ -205,8 +205,8 @@ def clone_bench_repo(args):
 
 
 	success = run_os_command(
-		{'git': 'git clone {repo_url} {bench_repo} --depth 1 --branch {branch}'.format(
-			repo_url=repo_url, bench_repo=clone_path, branch=branch)}
+		{'git': 'git clone {repo_url} {bench_repo} --depth 1'.format(
+			repo_url=repo_url, bench_repo=clone_path)}
 	)
 
 	return success
