@@ -95,7 +95,7 @@ Open your Terminal and enter:
 
 For Linux:
 
-	wget https://raw.githubusercontent.com/frappe/bench/master/playbooks/install.py
+	wget https://raw.githubusercontent.com/ketan4373/bench/master/playbooks/install.py
 
 For Mac OSX:
 
@@ -106,7 +106,7 @@ Install X Code (from App store) and HomeBrew (http://brew.sh/) first
 
 Download the Script
 
-	curl "https://raw.githubusercontent.com/frappe/bench/master/playbooks/install.py" -o install.py
+	curl "https://raw.githubusercontent.com/ketan4373/bench/master/playbooks/install.py" -o install.py
 
 #### 2. Run the install script
 
