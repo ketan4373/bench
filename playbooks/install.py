@@ -191,8 +191,7 @@ def check_brew_installed():
 def clone_bench_repo(args):
 	'''Clones the bench repository in the user folder'''
 	if os.path.exists(tmp_bench_repo):
-		os.system("rm -rf {}".format(tmp_bench_repo))
-		clone_path = tmp_bench_repo
+		return 0
 
 	elif args.without_bench_setup:
 		clone_path = os.path.join(os.path.expanduser('~'), 'bench')
@@ -205,8 +204,8 @@ def clone_bench_repo(args):
 
 
 	success = run_os_command(
-		{'git': 'git clone {repo_url} {bench_repo} --depth 1'.format(
-			repo_url=repo_url, bench_repo=clone_path)}
+		{'git': 'git clone {repo_url} {bench_repo} --depth 1 --branch {branch}'.format(
+			repo_url=repo_url, bench_repo=clone_path, branch=branch)}
 	)
 
 	return success
